@@ -4,30 +4,47 @@
     margin:  0;
     
 }
-body {
+html{
+  /* width: 90%  ;
+  margin:  0  auto ;
+  background-color: #19152B; */
+}
+.body_1 {
+  width: 100%  ;
+  margin:  0  auto ;
   background-color: #19152B;
 
 }
 .style_mian{
     width: 90%  ; 
-    margin:  0 auto;
+    margin:  0  auto ;
     background-color: #19152B;
 }
 
 /* Navbar styles */
+.na_0{
+  width: 100% ;
+  margin:  0 auto;
+  position:sticky; ;
+  top: 0;
+  z-index:4 ;
+  overflow: hidden;
 
+  background-color: #19152B;
+  
+}
 .navbar {
-    width: 100% ;
+    width: 85% ;
     margin:  0 auto;
     background-color: #19152B;
-    overflow: hidden;
+    /* overflow: hidden; */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
-    position: fixed;
+    /* padding: 1rem; */
+    /* position: fixed;
     top: 0;
-    z-index:4 ;
+    z-index:4 ; */
 
 }
 .navbar img {
@@ -41,7 +58,7 @@ body {
 }
 
 .navbar ul li {
-  margin-right: 10px;
+  /* margin-right: 10px; */
 }
       
 .navbar ul li a {
@@ -56,7 +73,7 @@ ul{
 }
 li{
     display: block;
-    transition:.2s;
+    transition:.1s;
 }
 
 ul:hover li{
@@ -72,9 +89,10 @@ ul li:hover{
     display: flex;
     width: 100%;
     height: 80vh;    
+    border-right:  1px dashed rgb(213,33,58);
 }
 .text_1{
-    width: 35%;
+    width: 50%;
     padding-top: 15%;
     padding-left: 3rem;
     
@@ -84,7 +102,9 @@ ul li:hover{
       background-color: rgb(82,24,46);
       padding: 0.5rem;
       border-radius:10%;
-      
+    }
+    & h1 {
+      font-size: 50px;
     }
 }
 .button {
@@ -101,15 +121,16 @@ ul li:hover{
 }
 
 .me{
-    width: 65%;
-    border-right:  1px dashed rgb(213,33,58);
+    width: 50%;
+    
     & img{
       display: flex;
-      width: 60%;
+      width: 80%;
       z-index: 3;
       align-items:center;
-      margin-left: 5rem;
-      
+      margin-left: 2.3rem;
+      border-radius: 30%;
+      margin-bottom: 1rem;
     }
     
 } 
@@ -124,20 +145,20 @@ ul li:hover{
   }
   
   .circle2 {
-    width: 90%;
-    height: 90%;
+    width: 95%;
+    height: 95%;
     border-radius: 50%;
-    background-color: rgb(44,20,42);
+    background-color: rgb(82,24,46);
     z-index: 1;
     display: flex;
     align-items:end;
   
   }
   .circle3 {
-    width: 90%;
+    width: 95%;
     height: 90%;
     border-radius: 50%;
-    background-color: rgb(35,21,40);
+    background-color: rgb(73, 19, 35);
     z-index: 0;
     display: flex;
     align-items:end;
@@ -152,13 +173,19 @@ ul li:hover{
 }
 
 /*  education  */
+html{
+  #education{
+  width: 100%;
+  background-color: rgb(42,35,68);
+}
+}
 .education_section{
   
   width: 100%;
   height: auto;
   padding-top: 3rem ;
   padding-bottom: 3rem;
-  background-color: rgb(42,35,68);
+  
 }
 /* education image section  */
 .image_cont{
@@ -173,7 +200,7 @@ ul li:hover{
 h2{
   text-align: center;
   color: white ;
-  padding-top: 2rem t;
+  padding-top: 1rem ;
   padding-bottom: 2rem;
 }
 
@@ -208,14 +235,21 @@ h2{
 /*  experience  */
 .xpee{
   display: flex; 
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   width: 100%;
   height: auto;
   justify-content: space-between;
   padding-bottom: 2.5rem;
-  /* background-color: rgb(42,35,68); */
-  & img {
-    width: 10%;
+ 
+  & div {
+    width: 20%;
+    color: white;
+    justify-content: center;
+    text-align: center;
+   
+    & img{
+      width: 70%;
+    }
   }
 }
 
@@ -225,124 +259,128 @@ h2{
   width: 100%;
   height: auto;
   
-  padding-top: 3rem !important;
-  padding-bottom: 3rem!important;
+  padding-top: 3rem ;
+  padding-bottom: 3rem ;
   background-color: rgb(42,35,68);
+
 }
 
 .card-container2 {
+  width: 90%;
+  margin: 0 auto;
   display: flex;
-  justify-content: center;
-  /* padding-top: 3rem; */
+  flex-wrap: wrap;
+  justify-content:space-around;
+
+
 }
 
 .card3 {
-  box-shadow: 0 4px 8px 0 rgba(48, 3, 130, 0.2);
-  transition: 0.3s;
-  width: 30%;
-  margin-right: 10px;
-  background-color: black;
-  padding-bottom: 2.5rem;
-  & h4 , p {
+
+  width: 35%;
+ 
+}
+.container_proj{
+  width: 50%;
+  text-align: left;
+
+& h4 , p {
     color: white;
     padding-left: 0.5rem;
   }
 }
 
 /* contaces */
-
+#contact{
+  width: 90%;
+  margin: 0 auto ;
+  
+}
+.contact_style{
+border-right: 1px dashed rgb(213,33,58);
+}
 .contact_us{
-  width: 75%;
+  width: 85%;
   height: auto;
   margin: 0 auto ;
-  text-align: center; 
   color: white ;
+  display: flex;
+  justify-content: space-between;
   & p{
     margin: 1.0rem ;
   }
 }
 
-.my_c i{
+.my_c {
+  width: 50%;
+  & i{
   background-color:rgb(215,34,58) ;
   padding: 0.5rem;
   border-radius:50%;
   font-size:larger;
-  
+  }
   
 }
 .styl_icon{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   gap: 1rem;
 }
 
 
 
 /*-----  end line  ------*/
-.end_por{
-  width: 100%;
-  height: 40vh ;
-  background-color: rgb(42,35,68);
-  display: flex;
-  align-items: center;
-  text-align: center;
-}
 
 
-.circle5 {
-
-  width: 6cm;
-  height: 6cm;
-  border-radius: 50%;
-  border: 2px dashed white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-}
-.end_CC{
-  margin: 0 auto;
-  
-}
 .end_style{
-  color: white;
-  fl
+  color: rgb(215,34,58);
+  width: 50%;
+  justify-content: center;
+  text-align: center;
   & i {
-    gap: 20rem;
+    font-size:35px ;
+   margin-left: 2rem;
   }
   
 }
 
 /* Responsive styles */
 @media screen and (max-width: 600px) {
-  .style_mian{
+  
+  .body_1{
     width: 100%  ;
-
-
+    margin:  0  auto ;
   }
-    .navbar {
+
+  .style_mian{
+    width: 85%  ;
+    margin:  0 auto;
+    
+  }
+  .na_0{
+    width: 100% ;
+    margin:  0 auto;
+  }
+  .navbar {
+      
     flex-wrap: nowrap;
     justify-content: center;
-    padding: 1rem 0;
+    gap: 0.5rem;
   }
   
   .navbar img {
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
   }
   
   .navbar ul {
     flex-direction: row;
-     font-size: 1rem; 
+    font-size: 1rem; 
     display: flex;
     gap: 0.5rem;
 
   }
   
-  .navbar ul li {
-    margin-right: 0;
-    margin-bottom: 0.5rem;
-  }
   .container_1{
     width: 100%;
     height: auto ;
@@ -355,9 +393,14 @@ h2{
       display: inline-block;
       justify-content: center;
       align-items: center;
+    & h1 {
+      font-size: 30px;
+    }
+    & p{
+      font-size: 15px;
     }
     & .me{
-      width: 75%;
+      width: 100%;
       height:auto;
       margin: 0 auto;
     }
@@ -369,6 +412,7 @@ h2{
     height: auto;
     margin-left: 30%;
   }
+ 
 }
 
 
